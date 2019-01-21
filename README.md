@@ -100,6 +100,7 @@ add와 commit의 차이가 뭔지 처음에는 헷갈릴 수 있습니다. add�
 
 10. 이제 마지막 단계입니다! 지금까지의 작업 내역을 원격 저장소(=리모트 저장소)에 반영시켜야겠죠? commit 내역을 원격 저장소로 보내는 명령어는 `git push [리모트 저장소 이름] [브랜치 이름]` 입니다. 
 브랜치는 `작업의 흐름`이라 생각하면 되는데, 당장은 몰라도 되므로 설명은 생략하겠습니다.
+([브랜치 설명 보러가기](https://github.com/DevSungshin/practice-git/blob/master/intro/learning-branch.md))
 
 리모트 저장소의 기본 이름은 origin, 기본 브랜치 이름은 master이므로 다음과 같이 입력합니다.
 
