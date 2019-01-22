@@ -50,9 +50,9 @@ git은 간단하게 말해 `버전 관리 시스템(VCS - Version Control System
 
 여기서 입력된 정보는 앞으로의 commit 때마다 사용됩니다.
 
-1.	**현재 위치를 git 저장소로 초기화** 하기 위해 `git init` 명령어를 입력해주세요. 그러면 **.git** 폴더가 생성됩니다.
+4.	**현재 위치를 git 저장소로 초기화** 하기 위해 `git init` 명령어를 입력해주세요. 그러면 **.git** 폴더가 생성됩니다.
 
-2.	이제 작업을 하기 위해 이 저장소(repository)의 내용물을 수정님의 로컬 컴퓨터로 다운 받아야합니다. 이때 사용하는 명령어는 **복제한다는 의미를 담은** `git clone [project url]`입니다.
+5.	이제 작업을 하기 위해 이 저장소(repository)의 내용물을 수정님의 로컬 컴퓨터로 다운 받아야합니다. 이때 사용하는 명령어는 **복제한다는 의미를 담은** `git clone [project url]`입니다.
 
 ```
   git clone https://github.com/DevSungshin/practice-git.git
@@ -62,7 +62,7 @@ git은 간단하게 말해 `버전 관리 시스템(VCS - Version Control System
 
 잠시 기다리면 practice-git이라는 폴더가 생성되고 안에는 이 repository의 내용이 그대로 들어있는 것을 확인할 수 있습니다. 이제 본격적으로 작업할 준비가 되었네요.
 
-1.	경로를 변경하는 명령어 `cd`를 사용해서 작업할 폴더 안으로 들어가주세요.
+6.	경로를 변경하는 명령어 `cd`를 사용해서 작업할 폴더 안으로 들어가주세요.
 
 ```
   cd practice-git
@@ -70,11 +70,11 @@ git은 간단하게 말해 `버전 관리 시스템(VCS - Version Control System
 
 새로운 파일을 추가하거나, 기존 파일을 수정합니다. 저는 예시로 practice 폴더 안에 *hi.txt* 파일을 만들어볼게요!
 
-1.	`git status` 명령어로 저장소의 상태를 출력해보세요. Untracked files 목록에 내가 변경 혹은 수정한 내역이 붉은 글자로 뜬다면 git이 제대로 프로젝트의 **변경사항을 추적하고 있다는 뜻** 입니다.
+7.	`git status` 명령어로 저장소의 상태를 출력해보세요. Untracked files 목록에 내가 변경 혹은 수정한 내역이 붉은 글자로 뜬다면 git이 제대로 프로젝트의 **변경사항을 추적하고 있다는 뜻** 입니다.
 
 ![img3](https://github.com/DevSungshin/practice-git/blob/master/intro/img3.png?raw=true)
 
-1.	그러면 이제 `git add [name]` 명령어로 저장소에 파일을 추가합니다. 특정 파일이나 디렉터리 전체를 추가할 거라면 뒤에 이름을 그대로 써주면 되고, 모든 변경 사항을 add 할거라면 `git add *`을 입력해주세요.
+8.	그러면 이제 `git add [name]` 명령어로 저장소에 파일을 추가합니다. 특정 파일이나 디렉터리 전체를 추가할 거라면 뒤에 이름을 그대로 써주면 되고, 모든 변경 사항을 add 할거라면 `git add *`을 입력해주세요.
 
 ```
   git add *
@@ -85,7 +85,7 @@ git은 간단하게 말해 `버전 관리 시스템(VCS - Version Control System
 
 ![img4](https://github.com/DevSungshin/practice-git/blob/master/intro/img4.png?raw=true)
 
-1.	이 상태에서 실제 변경 내역을 **확정** 하려면 `git commit` 명령어를 사용해야 합니다.
+9.	이 상태에서 실제 변경 내역을 **확정** 하려면 `git commit` 명령어를 사용해야 합니다.
 
 add와 commit의 차이가 뭔지 처음에는 헷갈릴 수 있습니다. add는 저장소에 `변화를 반영`시키는 것이고, commit은 `일정한 작업의 단위를 확정`하는 것이라 생각하면 됩니다. commit을 하고나면 마지막 commit 이후부터 현재까지 발생한 모든 변경사항을 모아 새로운 버전을 만들게 됩니다. 즉, **'commit = 버전을 만든다.'** 라고 생각하시면 됩니다.
 
@@ -95,7 +95,7 @@ add와 commit의 차이가 뭔지 처음에는 헷갈릴 수 있습니다. add�
   git commit -m "이번 작업에 대한 설명"
 ```
 
-1.	이제 마지막 단계입니다! 지금까지의 작업 내역을 원격 저장소(=리모트 저장소)에 반영시켜야겠죠? commit 내역을 원격 저장소로 보내는 명령어는 `git push [리모트 저장소 이름] [브랜치 이름]` 입니다. 브랜치는 `작업의 흐름`이라 생각하면 되는데, 당장은 몰라도 되므로 설명은 생략하겠습니다.
+10.	이제 마지막 단계입니다! 지금까지의 작업 내역을 원격 저장소(=리모트 저장소)에 반영시켜야겠죠? commit 내역을 원격 저장소로 보내는 명령어는 `git push [리모트 저장소 이름] [브랜치 이름]` 입니다. 브랜치는 `작업의 흐름`이라 생각하면 되는데, 당장은 몰라도 되므로 설명은 생략하겠습니다.
 
 리모트 저장소의 기본 이름은 origin, 기본 브랜치 이름은 master이므로 다음과 같이 입력합니다.
 
@@ -115,14 +115,16 @@ add와 commit의 차이가 뭔지 처음에는 헷갈릴 수 있습니다. add�
 
 ### 일단은 그냥 많이 써보세요! 👍
 
+
 더 많은 정리글
 --------------
 
 -	[Git branch 정리](https://github.com/DevSungshin/practice-git/blob/master/intro/learning-branch.md)
 -	[Git fetch와 pull 정리](https://github.com/DevSungshin/practice-git/blob/master/intro/fetch-and-pull.md)
 
--	추천 학습 사이트
-	----------------
+
+추천 학습 사이트
+----------------
 -	[공식 문서 (한글)](https://git-scm.com/book/ko/v2)
 
 -	[누구나 쉽게 이해할 수 있는 Git 입문](https://backlog.com/git-tutorial/kr/intro/intro1_1.html?fbclid=IwAR0i2cl1khBuMez9FaWISUBsUN-2DvI5h_lWwnYYRlk4BHAQEnAzKxh8qRQ)
